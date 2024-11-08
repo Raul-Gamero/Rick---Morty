@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick vs Morty - French Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rick vs Morty: French Grammar Battle!</h1>   
+        <!-- Health Bars and Character Images -->
+        <div class="health-container">
+            <div class="character-health">
+                <img id="rick" class="character-image" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick">
+                <div class="health-bar">
+                    <div id="rick-health" class="health"></div>
+                </div>
+                <p>Rick's Health: <span id="rick-health-points">100</span></p>
+            </div>
+            <div class="character-health">
+                <img id="morty" class="character-image" src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="Morty">
+                <div class="health-bar">
+                    <div id="morty-health" class="health"></div>
+                </div>
+                <p>Morty's Health: <span id="morty-health-points">100</span></p>
+            </div>
+        </div>
+        <!-- Main menu-->
+        <div id="level-selection">
+            <h2>Select Level</h2>
+            <button class="A1" onclick="selectLevel('A1')">A1</button>
+            <button class="A2" onclick="selectLevel('A2')">A2</button>
+            <button class="B1" onclick="selectLevel('B1')">B1</button>
+            <button class="B2" onclick="selectLevel('B2')">B2</button>
+        </div>
+        <div id="game-container" style="display:none;">
+            <div id="question-container">
+                <h2 id="question"></h2>
+                <button class="option" id="option1"></button>
+                <button class="option" id="option2"></button>
+                <button class="option" id="option3"></button>
+                <button class="option" id="option4"></button>
+            </div>
+            <div class="result" id="result"></div>
+            <div id="health-bar">
+                <div id="rick-health" style="width: 100%;"></div>
+                <div id="morty-health" style="width: 100%;"></div>
+            </div>
+        </div>
+        <!-- Result -->
+        <p id="result"></p>
+    </div>
+    <button class='reset-btn' id="reset">Reset 🔄</button>
+    <script src="script.js"></script>
+</body>
+</html>

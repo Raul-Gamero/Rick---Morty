@@ -267,7 +267,7 @@ function showQuestion() {
     document.getElementById("result").textContent = "";
 }
 
-// Function to check if the answer is correct
+// Function to check if the answer is correct .
 function checkAnswer(selectedOption) {
     const currentQuestion = questions[selectedLevel][currentQuestionIndex];
     const resultDiv = document.getElementById("result");
